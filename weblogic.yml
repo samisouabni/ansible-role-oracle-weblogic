@@ -1,0 +1,8 @@
+- name: test install weblogic 12c
+  hosts: oracleweb
+  roles:
+    - role: oracle-weblogic
+      oracle_weblogic_version: 12c
+      oracle_weblogic_release: 12.2.1
+      oracle_weblogic_quick_installation: no
+      oracle_weblogic_jar: /fmw_12.2.1.0.0_wls.jar
